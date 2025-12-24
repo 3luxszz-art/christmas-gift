@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #ffffff;
+  background: radial-gradient(circle at top, #1b325d, #050814);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Snow canvas background */
+#snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+/* Centered landing page content */
+.center {
+  text-align: center;
+  padding: 40px;
+  background: rgba(5, 8, 20, 0.7);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  max-width: 500px;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #ffdad9;
+}
+
+.center p {
+  margin-bottom: 24px;
+  color: #f4f4ff;
+}
+
+/* Buttons */
+.gift-btn,
+.next-btn {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #1b0505;
+  font-weight: 600;
+  background: linear-gradient(135deg, #ff7373, #ffd08a);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+.gift-btn:hover,
+.next-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+  filter: brightness(1.05);
+}
+
+/* Letter card */
+.letter-card {
+  max-width: 650px;
+  padding: 30px 30px 20px;
+  background: rgba(10, 12, 30, 0.82);
+  border-radius: 24px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.7);
+  line-height: 1.7;
+  font-size: 1rem;
+  white-space: pre-wrap;
+  position: relative;
+}
+
+.letter-card #typed-text {
+  margin-bottom: 24px;
+}
+
+/* General page layout for memories/final */
+.page {
+  max-width: 800px;
+  padding: 30px;
+  background: rgba(10, 12, 30, 0.82);
+  border-radius: 24px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.page h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #ffe3df;
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #e0e4ff;
+  font-size: 0.95rem;
+}
+
+/* Photo grid */
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.photo-card {
+  width: 160px;
+  height: 160px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.7);
+  transform: translateY(0);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  background: #111325;
+}
+
+.photo-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Brainrot text */
+.brainrot {
+  font-size: 0.95rem;
+  color: #ffe8f7;
+  margin-bottom: 24px;
+}
+
+.brainrot span {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* Final page text */
+.final-page .final-text {
+  margin-bottom: 30px;
+  line-height: 1.7;
+  color: #f5f0ff;
+}
+
+.signature {
+  font-size: 1rem;
+  color: #ffd6db;
+}
+
+/* Make sure content is scrollable if needed on small screens */
+html, body {
+  height: 100%;
+}
+
+body {
+  overflow-y: auto;
+}
